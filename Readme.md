@@ -67,6 +67,8 @@ sudo apt-get install cpp-ethereum
 
 https://github.com/ethereum/wiki/wiki
 
+# Detect GPU type: NVIDIA
 
+sudo lshw -C video
 
 
