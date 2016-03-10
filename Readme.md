@@ -74,4 +74,8 @@ sudo lshw -C video
 ## Detect x86 or ppc
 cat /proc/cpuinfo
 
+sEtup GPU
+https://forum.ethereum.org/discussion/comment/8889/#Comment_8889
+https://developer.nvidia.com/cuda-downloads
+
 
