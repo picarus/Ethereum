@@ -2,6 +2,10 @@
 
 Describe how to setup an Ethereum Frontier node
 
+## Amazon
+Use GPU instances
+user is ubuntu, not ec2-user
+
 ## Google Cloud Engine
 
 ### VM instance
@@ -32,13 +36,18 @@ https://github.com/ethereum/go-ethereum/wiki/JavaScript-Console#adminminerstart
 
 https://ethereum.gitbooks.io/frontier-guide/content/netstats.html
 
+sudo apt-get install git
 git clone https://github.com/cubedro/eth-net-intelligence-api
 cd eth-net-intelligence-api
+sudo apt-get install npm
 npm install
 sudo npm install -g pm2
 sudo apt-get install node 
-
+specify the secret on app.json (from the title of the Skype group)
 pm2 start app.json
+
+sudo nohup geth  > ethertraces.log 2>&1 &
+jobs -l shows all the process running with nohup
 
 
 
